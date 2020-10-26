@@ -6,20 +6,35 @@
 
 function question1() {
     // fråga om alt 1 eller 2
-    let question1 = prompt('Q: Your spanish teacher Hans asks if you are attending Spanish class later. What do you answer him?\r\nA1: hans\r\nA2: bersås');
+    let answer1 = prompt('Q: Your spanish teacher Hans asks if you are attending Spanish class later. What do you answer him?\r\nA1: hans\r\nA2: bersås');
 
-    if (question1 === '1') {
-        console.log('worked');
-    } else if (question1 === '2') {
-        console.log('worked again')
+    if (answer1 === '1') {
+        alert('worked');
+    } else if (answer1 === '2') {
+        return(answer1);
     } else {
         console.log('didnt work');
     }
 }
 
-// function question2() {
-    
-// }
+function question2() {
+    let answer2 = prompt('Q: Your spanish teacher Hans\r\nA1: hans\r\nA2: bersås');
+
+    if (answer1 === '1') {
+        alert('worked');
+    } else if (answer1 === '2') {
+        // send to question
+    } else {
+        console.log('didnt work');
+    }
+}
+
+function startGame() {
+    const startAlert = alert('Welcome to The Office "Second Life"! You will be given a set of questions with two different answers, choose answer 1 by simply typing 1 into the text field, and type 2 for answer number 2. Press the button to start')
+}
+
+startGame();
+
 
 /* ÖVNING 2
 
