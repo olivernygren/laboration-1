@@ -1,4 +1,4 @@
 # laboration-1
 
 ## Beskrivning av uppgiften
-I denna textbaserade interaktiva värld befinner du dig i ditt livs värsta skol-mardrömmar. Rektorns kontor, utskällningar eller tvingas läsa skönlitteratur under 2 timmar, vem vet vad som väntar här näst?
+I denna textbaserade interaktiva värld befinner du dig mitt i NBC:s briljanta serie 'The Office'. Bli prankad av Jim, stött på av Meredith eller kränkt av din chef Michael, vem vet vad som kommer här näst?
