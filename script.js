@@ -27,7 +27,7 @@ function interview() {
         offeredTempJob();
     } else {
         alert('Only type 1 or 2 into the text field, try again!');
-        question1();
+        interview();
     }
 }
 
@@ -129,7 +129,7 @@ function goToLunch() {
 }
 
 function declineLunchInvitation() {
-    const answer = prompt('Q: You cannot just say no to an invite like that, there has to be reason for your decision. What is your reason for declining the lunch invite?\r\nA1: "I am so sorry, I do not feel like going out to lunch today"\r\nA2: I am not feeling so well. I have got a ton of work to do here. MSG allergy. Peanut allergy. I just ate there last night.');               
+    const answer = prompt('Q: You cannot just say no to an invite like that, there has to be reason for your decision. What is your reason for declining the lunch invite?\r\nA1: "I am so sorry, I do not feel like going out to lunch today"\r\nA2: "I am not feeling so well. I have got a ton of work to do here. MSG allergy. Peanut allergy. I just ate there last night"');               
 
     if (answer === '1') {
         fired();                                               
@@ -145,7 +145,7 @@ function prankDwight() {
     const answer = prompt('Q: Jim is currently working a prank, to put a couple of keys on Dwights giant keyring every day until it is so heavy that his pants fall off. You have to distract Dwight so Jim can put the keys on. What do you start talking about to distract him?\r\nA1: Bears, beets and battlestar galactica\r\nA2: Ask for a list of his leads so you can get some clients');               
 
     if (answer === '1') {
-        alert('It just so happens that those three things are Dwigths favourite things in life! You end up charming him and also helping Jim with his prank. Eventually Dwights pants fall off but he never suspects that you helped Jim. You three form a strong alliance and you love life at Dunder Mifflin!');                                               
+        alert('It just so happens that those three things are Dwigths favorite things in life! You end up charming him and also helping Jim with his prank. Eventually Dwights pants fall off but he never suspects that you helped Jim. You three form a strong alliance and you love life at Dunder Mifflin!');                                               
         finishGame();
     } else if (answer === '2') {
         alert('Dwight gets very angry and worries that the pact you have made with Jim is eventually going to be his demise. He hires his friend Trevor to kill you');
@@ -156,8 +156,23 @@ function prankDwight() {
     }
 }
 
+function doNotPrankDwight() {
+    const answer = prompt('Q: By not pranking Dwight you have shown Jim that you are lame, and not to be trusted. The question now is, do you disclose Jims prank to Dwight and form an alliance with him, or just continue to live your life as it is?\r\nA1: Tell Dwight about Jims prank\r\nA2: Do not say anything about the prank and pretend like nothing has happened');               
+
+    if (answer === '1') {
+        alert('Dwight very much appreciates the honesty and Jim eventually forgives you. You are now very happy at Dunder Mifflin and continue to work here for many, many years')
+        finishGame();                                               
+    } else if (answer === '2') {
+        alert('After Dwights pants fall off, he finds out that you knew about the prank the entire time, and you did not tell him about it. He decides to take his revenge and hassles you all winter by throwing snow balls at you. It is too much to handle and you have to quit you job');
+        gameOver();                                               
+    } else {
+        alert('Only type 1 or 2 into the text field, try again!');       
+        doNotPrankDwight();                                               
+    }
+}
+
 function fired() {
-    const answer = prompt('Q: Michael is very disappointed with you. And it turns out he needs to let one of his employees go to save the company money. You have now made the top of the list. He says that you are fired. What di you respond?\r\nA1: "Alright, I understand. I will get back on my feet. Bye!"\r\nA2: Suggest that he fires Devon instead since you are much better at your work than he is');               
+    const answer = prompt('Q: Michael is very disappointed with you. And it turns out he needs to let one of his employees go to save the company money. You have now made the top of the list. He says that you are fired. What do you respond?\r\nA1: "Alright, I understand. I will get back on my feet. Bye!"\r\nA2: Suggest that he fires Devon instead since you are much better at your work than he is');               
 
     if (answer === '1') {
         gameOver();                                               
@@ -185,18 +200,7 @@ function driveYourself() {
     gameOver();
 }
 
-// function nameOfQuestionX() {
-//     const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
 
-//     if (answer === '1') {
-//         nameOfQuestionY();                                               
-//     } else if (answer === '2') {
-//         nameOfQuestionZ();                                               
-//     } else {
-//         alert('Only type 1 or 2 into the text field, try again!');       
-//         nameOfQuestionX();                                               
-//     }
-// }
 
 
 
