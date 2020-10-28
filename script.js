@@ -220,7 +220,7 @@ function gameOver() {
 
 
 function startGame() {
-    const startAlert = alert('Welcome to The Office "Second Life"! You will be given a set of questions with two different answers, choose answer 1 by simply typing 1 into the text field, and type 2 for answer number 2. Press the button to start')
+    alert('Welcome to The Office "Second Life"! You will be given a set of questions with two different answers, choose answer 1 by simply typing 1 into the text field, and type 2 for answer number 2. Press the button to start')
 }
 
-startGame();
+startGame(); //gives you instructions of how the game works before it starts
