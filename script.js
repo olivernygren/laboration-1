@@ -1,8 +1,3 @@
-// 10 scenarion
-// Prompt används för att be användaren om kommandon
-// Alert används för ge information till användaren om världen
-// ?? skapa 20 scenarion, varje scen får 2 scenarion, 'positive' och 'negative'
-
 /*
 
 Basic Game Structure:
@@ -89,7 +84,7 @@ function takeTheTempJob() {
 }
 
 function doNotTakeTheTempJob() {
-    const answerX = alert('You obviously do not like "The Office". I am so sorry, this game is not for you.\r\nGAME OVER!');
+    alert('You obviously do not like "The Office". I am so sorry, this game is not for you.\r\nGAME OVER!');
 }
 
 function speakToJim() {
@@ -109,12 +104,14 @@ function speakToDwight() {
     const answerX = prompt('Q: Dwight offers to take you on a sales-call, so you can get your foot in the door with a client, do you go with him?\r\nA1: Yes\r\nA2: No');
 
     if (answerX === '1') {
-        questionXOptionX();
+        alert('It turns out that there is no client, and Dwight drives out to his beet farm and abandons you in on one of his beet fields. You are lost and the night comes, where you eventually freeze to death. Dwight saw a lot of potential in you and decided you would be too much competition for him');
+        gameOver();
     } else if (answerX === '2') {
-        questionXOptionY();
+        alert('Great choice! You never know what Dwight is up to, and you do not need his help anyways. You are a strong independent man and will go on to have a great career in paper selling.');
+        finishGame();
     } else {
         alert('Only type 1 or 2 into the text field, try again!');
-        question3Option4();
+        speakToDwight();
     }
 }
 
@@ -148,79 +145,58 @@ function prankDwight() {
     const answer = prompt('Q: Jim is currently working a prank, to put a couple of keys on Dwights giant keyring every day until it is so heavy that his pants fall off. You have to distract Dwight so Jim can put the keys on. What do you start talking about to distract him?\r\nA1: Bears, beets and battlestar galactica\r\nA2: Ask for a list of his leads so you can get some clients');               
 
     if (answer === '1') {
-        nameOfQuestionY();                                               
+        alert('It just so happens that those three things are Dwigths favourite things in life! You end up charming him and also helping Jim with his prank. Eventually Dwights pants fall off but he never suspects that you helped Jim. You three form a strong alliance and you love life at Dunder Mifflin!');                                               
+        finishGame();
     } else if (answer === '2') {
-        nameOfQuestionZ();     //hire trevor to murder you                                          
+        alert('Dwight gets very angry and worries that the pact you have made with Jim is eventually going to be his demise. He hires his friend Trevor to kill you');
+        gameOver();                                         
     } else {
         alert('Only type 1 or 2 into the text field, try again!');       
-        nameOfQuestionX();                                               
+        prankDwight();                                               
     }
 }
 
-function nameOfQuestionX() {
-    const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
+function fired() {
+    const answer = prompt('Q: Michael is very disappointed with you. And it turns out he needs to let one of his employees go to save the company money. You have now made the top of the list. He says that you are fired. What di you respond?\r\nA1: "Alright, I understand. I will get back on my feet. Bye!"\r\nA2: Suggest that he fires Devon instead since you are much better at your work than he is');               
 
     if (answer === '1') {
-        nameOfQuestionY();                                               
+        gameOver();                                               
     } else if (answer === '2') {
-        nameOfQuestionZ();                                               
+        alert('Michael is convinced to fire Devon instead. This means you can continue to work at Dunder Mifflin for many more years!');
+        finishGame();                                               
     } else {
         alert('Only type 1 or 2 into the text field, try again!');       
-        nameOfQuestionX();                                               
+        fired();                                               
     }
 }
 
-function nameOfQuestionX() {
-    const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
-
-    if (answer === '1') {
-        nameOfQuestionY();                                               
-    } else if (answer === '2') {
-        nameOfQuestionZ();                                               
-    } else {
-        alert('Only type 1 or 2 into the text field, try again!');       
-        nameOfQuestionX();                                               
-    }
+function acceptApology() {
+    alert('Michael accepts your reasons for not wanting to go to lunch with him. You continue to do great work at Dunder Mifflin where yuo end up working for many years to come!')
+    finishGame();
 }
 
-function nameOfQuestionX() {
-    const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
-
-    if (answer === '1') {
-        nameOfQuestionY();                                               
-    } else if (answer === '2') {
-        nameOfQuestionZ();                                               
-    } else {
-        alert('Only type 1 or 2 into the text field, try again!');       
-        nameOfQuestionX();                                               
-    }
+function goWithMichael() {
+    alert('You go with Michael and have a lovely time at Benihanas, an asian buffet restaurant. You make a great impression on Michael and can continue to work along side him at Dunder Mifflin for many years!');
+    finishGame();
 }
 
-function nameOfQuestionX() {
-    const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
-
-    if (answer === '1') {
-        nameOfQuestionY();                                               
-    } else if (answer === '2') {
-        nameOfQuestionZ();                                               
-    } else {
-        alert('Only type 1 or 2 into the text field, try again!');       
-        nameOfQuestionX();                                               
-    }
+function driveYourself() {
+    alert('Deciding to drive yourself was a huge mistake. You end up hitting a Bear with your car and sadly, you pass away, and so does the bear.');
+    gameOver();
 }
 
-function nameOfQuestionX() {
-    const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
+// function nameOfQuestionX() {
+//     const answer = prompt('Q: ...\r\nA1: ...\r\nA2: ...');               
 
-    if (answer === '1') {
-        nameOfQuestionY();                                               
-    } else if (answer === '2') {
-        nameOfQuestionZ();                                               
-    } else {
-        alert('Only type 1 or 2 into the text field, try again!');       
-        nameOfQuestionX();                                               
-    }
-}
+//     if (answer === '1') {
+//         nameOfQuestionY();                                               
+//     } else if (answer === '2') {
+//         nameOfQuestionZ();                                               
+//     } else {
+//         alert('Only type 1 or 2 into the text field, try again!');       
+//         nameOfQuestionX();                                               
+//     }
+// }
 
 
 
@@ -232,7 +208,7 @@ function finishGame() {
 }
 
 function gameOver() {
-    const gameOverAlert = alert('')
+    const gameOverAlert = alert('Unfortunately the game is now over. In life, you have to make the correct decisions to live on, and you have not. GAME OVER!')
 }
 
 
@@ -243,4 +219,4 @@ function startGame() {
     const startAlert = alert('Welcome to The Office "Second Life"! You will be given a set of questions with two different answers, choose answer 1 by simply typing 1 into the text field, and type 2 for answer number 2. Press the button to start')
 }
 
-// startGame();
+startGame();
