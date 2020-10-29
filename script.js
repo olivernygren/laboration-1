@@ -17,6 +17,9 @@ function nameOfQuestionX() {
 
 */
 
+const button = document.querySelector('button');
+button.onclick = interview;
+
 function interview() {
     const answer = prompt('Q: You are currently interviewing for a job at Dunder Mifflin Paper Company. You decide that the best way to impress your potential future boss, Michael Scott, is by using what?\r\nA1: Personality mirroring, name repetition and never breaking off a handshake\r\nA2: Being nice and polite, sometimes laughing at his jokes');
 
@@ -162,7 +165,7 @@ function doNotPrankDwight() {
         alert('Dwight very much appreciates the honesty and Jim eventually forgives you. You are now very happy at Dunder Mifflin and continue to work here for many, many years')
         finishGame();                                               
     } else if (answer === '2') {
-        alert('After Dwights pants fall off, he finds out that you knew about the prank the entire time, and you did not tell him about it. He decides to take his revenge and hassles you all winter by throwing snow balls at you. It is too much to handle and you have to quit you job');
+        alert('After Dwights pants fall off, he finds out that you knew about the prank the entire time, and you did not tell him about it. He decides to take his revenge and hassles you all winter by throwing snow balls at you. It is too much to handle and you have to quit your job');
         gameOver();                                               
     } else {
         alert('Only type 1 or 2 into the text field, try again!');       
