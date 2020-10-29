@@ -17,6 +17,11 @@ function nameOfQuestionX() {
 
 */
 
+/** Starts the game when the button is pressed */
+function buttonPressed() {
+    const button = document.querySelector('button');
+    button.onclick = interview;
+}
 
 function interview() {
     const answer = prompt('Q: You are currently interviewing for a job at Dunder Mifflin Paper Company. You decide that the best way to impress your potential future boss, Michael Scott, is by using what?\r\nA1: Personality mirroring, name repetition and never breaking off a handshake\r\nA2: Being nice and polite, sometimes laughing at his jokes');
@@ -145,7 +150,7 @@ function prankDwight() {
     const answer = prompt('Q: Jim is currently working a prank, to put a couple of keys on Dwights giant keyring every day until it is so heavy that his pants fall off. You have to distract Dwight so Jim can put the keys on. What do you start talking about to distract him?\r\nA1: Bears, beets and battlestar galactica\r\nA2: Ask for a list of his leads so you can get some clients');               
 
     if (answer === '1') {
-        alert('It just so happens that those three things are Dwigths favorite things in life! You end up charming him and also helping Jim with his prank. Eventually Dwights pants fall off but he never suspects that you helped Jim. You three form a strong alliance and you love life at Dunder Mifflin!');                                               
+        alert('It just so happens that those three things are Dwights favorite things in life! You end up charming him and also helping Jim with his prank. Eventually Dwights pants fall off but he never suspects that you helped Jim. You three form a strong alliance and you love life at Dunder Mifflin!');                                               
         finishGame();
     } else if (answer === '2') {
         alert('Dwight gets very angry and worries that the pact you have made with Jim is eventually going to be his demise. He hires his friend Trevor to kill you');
@@ -186,7 +191,7 @@ function fired() {
 }
 
 function acceptApology() {
-    alert('Michael accepts your reasons for not wanting to go to lunch with him. You continue to do great work at Dunder Mifflin where yuo end up working for many years to come!')
+    alert('Michael accepts your reasons for not wanting to go to lunch with him. You continue to do great work at Dunder Mifflin where you end up working for many years to come!')
     finishGame();
 }
 
