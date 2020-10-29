@@ -17,12 +17,6 @@ function nameOfQuestionX() {
 
 */
 
-/** Starts the game when the button is pressed */
-function buttonPressed() {
-    const button = document.querySelector('button');
-    button.onclick = interview;
-}
-
 function interview() {
     const answer = prompt('Q: You are currently interviewing for a job at Dunder Mifflin Paper Company. You decide that the best way to impress your potential future boss, Michael Scott, is by using what?\r\nA1: Personality mirroring, name repetition and never breaking off a handshake\r\nA2: Being nice and polite, sometimes laughing at his jokes');
 
