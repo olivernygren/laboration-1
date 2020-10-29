@@ -211,11 +211,12 @@ function driveYourself() {
 
 
 
-
+/** Finishes the game when you made the correct choices */
 function finishGame() {
     const finishAlert = alert('You clearly know how to live "The Office" life, congrats! You have now completed the game and you can give yourself a pat on the back, great work!');               
 }
 
+/** Finishes the game when you made the wrong choices */
 function gameOver() {
     const gameOverAlert = alert('Unfortunately the game is now over. In life, you have to make the correct decisions to live on, and you have not. GAME OVER!')
 }
@@ -223,9 +224,9 @@ function gameOver() {
 
 
 
-
+/** Gives the instructions of how the game is played before the game starts */
 function startGame() {
     alert('Welcome to The Office "Second Life"! You will be given a set of questions with two different answers, choose answer 1 by simply typing 1 into the text field, and type 2 for answer number 2. Press the button to start')
 }
 
-startGame(); //gives you instructions of how the game works before it starts
+startGame();
